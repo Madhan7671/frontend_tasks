@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+
+<style>
+    body {
+        font-family: serif;
+        margin: 0;
+    }
+
+    /* TOP TEXT */
+    .top-text {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* FIELDSET */
+    fieldset {
+        margin: 20px;
+        padding: 30px;
+        border: 1px solid gray;
+
+        display: flex;
+        justify-content: center;   /* CENTER FORM */
+    }
+
+    legend {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    /* FORM BOX */
+    .form-box {
+        width: 500px;
+    }
+
+    /* ROW (2 COLUMN) */
+    .row {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 15px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid gray;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP TEXT -->
+<div class="top-text">
+    <b>Please complete all the information below.</b>
+</div>
+
+<form>
+
+<fieldset>
+<legend>Sign Up Here</legend>
+
+<div class="form-box">
+
+    <!-- NAME -->
+    <div class="row">
+        <div class="col">
+            <label>Name:</label>
+            <input type="text" placeholder="First Name">
+        </div>
+
+        <div class="col">
+            <label>&nbsp;</label>
+            <input type="text" placeholder="Last Name">
+        </div>
+    </div>
+
+    <!-- EMAIL + CONTACT -->
+    <div class="row">
+        <div class="col">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter the email">
+        </div>
+
+        <div class="col">
+            <label>Contact:</label>
+            <input type="text" placeholder="Ex-1234567890">
+        </div>
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="row">
+        <div class="col">
+            <label>Set password:</label>
+            <input type="password" placeholder="New password">
+        </div>
+    </div>
+
+    <!-- FILE -->
+    <div class="row">
+        <div class="col">
+            <label>Profile:</label>
+            <input type="file">
+        </div>
+    </div>
+
+    <!-- BUTTON -->
+    <button type="submit">Submit</button>
+
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>

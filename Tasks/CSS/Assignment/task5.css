@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #cfd4db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+}
+
+.sidebar {
+  background-color: #4c4cff;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.step p {
+  font-size: 10px;
+}
+
+.step h4 {
+  font-size: 12px;
+}
+
+.active .circle {
+  background-color: white;
+  color: black;
+}
+
+.form-box {
+  padding: 20px;
+  flex: 1;
+}
+
+.form-box h2 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #0b0f2f;
+  color: white;
+  border: none;
+  float: right;
+}

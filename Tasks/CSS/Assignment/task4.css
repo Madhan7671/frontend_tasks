@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #dbe9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e3e;
+}
+
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+label span {
+    color: #1e7a63;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfd8d5;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1e7a63;
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+
+.radio-box {
+    border: 1px solid #cfd8d5;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e7a63;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #166b56;
+}

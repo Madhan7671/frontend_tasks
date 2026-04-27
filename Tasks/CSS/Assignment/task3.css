@@ -1,0 +1,47 @@
+
+
+.outer{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+.inner{
+     background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.image{
+        width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+h1{
+    
+    color: white;
+    margin-bottom: 5px;
+
+}
+h5{
+    color: #c4f82a;
+    margin-bottom: 15px;
+}
+p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.buttons button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    
+    font-weight: bold;
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfume Card</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f3ece7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        display: flex;
+        width: 600px;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .card img {
+        width: 50%;
+        object-fit: cover;
+      }
+      .card-content {
+        width: 50%;
+        padding: 30px;
+      }
+      .category {
+        font-size: 12px;
+        letter-spacing: 4px;
+        color: gray;
+        margin-bottom: 15px;
+      }
+      .title {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        color: #1c1c1c;
+      }
+      .description {
+        font-size: 14px;
+        color: #6c6c6c;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+      }
+      .new-price {
+        font-size: 32px;
+        font-weight: bold;
+        color: #3d8168;
+      }
+      .old-price {
+        font-size: 14px;
+        color: gray;
+        text-decoration: line-through;
+      }
+      button {
+        width: 100%;
+        padding: 15px;
+        background-color: #3d8168;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #2f6652;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://th.bing.com/th/id/R.dc4df7abc8ef02e423f8a66e79227001?rik=5zXTYGCyySatbQ&riu=http%3a%2f%2fpublicdomainpictures.net%2fpictures%2f40000%2fvelka%2fperfume-bottle.jpg&ehk=9OTPc%2fwSzT2%2b35Eiv9eDKDn9hB%2bTFcoFtYpaJknJKTU%3d&risl=&pid=ImgRaw&r=0"
+        alt="Perfume"
+      />
+      <div class="card-content">
+        <div class="category">PERFUME</div>
+        <div class="title">Gabrielle Essence Eau De Parfum</div>
+        <div class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </div>
+        <div class="price">
+          <div class="new-price">$149.99</div>
+          <div class="old-price">$169.99</div>
+        </div>
+        <button>🛒 Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

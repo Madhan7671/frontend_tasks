@@ -1,0 +1,141 @@
+:root {
+    --bg-color: #0b0b1e;
+    --card-bg: #1e1e30;
+    --accent-blue: #3d5afe;
+    --text-white: #ffffff;
+    --text-gray: #a0a0c0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #16162a;
+    color: white;
+}
+
+.search-btn {
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+
+.hero-card {
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.temp-val {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.detail-card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.detail-card span {
+    display: block;
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+
+.hourly-sidebar {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #2d2d44;
+}
+
+.days-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.day {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+
+@media (max-width: 768px) {
+    .grid-layout { grid-template-columns: 1fr; }
+    .details-grid { grid-template-columns: 1fr 1fr; }
+    input { width: 100%; }
+}

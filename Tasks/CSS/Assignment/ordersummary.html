@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(225, 100%, 94%);
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card {
+        width: 350px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .card img.hero {
+        width: 100%;
+        display: block;
+      }
+
+      .card-content {
+        padding: 30px;
+      }
+
+      .card h2 {
+        color: hsl(223, 47%, 23%);
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        color: hsl(224, 23%, 55%);
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .plan-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: hsl(225, 100%, 98%);
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+      }
+
+      .plan-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .plan-left img {
+        width: 45px;
+      }
+
+      .plan-details h4 {
+        color: hsl(223, 47%, 23%);
+        font-size: 16px;
+      }
+
+      .plan-details span {
+        color: hsl(224, 23%, 55%);
+        font-size: 14px;
+      }
+
+      .change-link {
+        color: hsl(245, 75%, 52%);
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .payment-btn {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        background: hsl(245, 75%, 52%);
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 12px 18px rgba(56, 41, 224, 0.25);
+        margin-bottom: 20px;
+      }
+
+      .cancel-btn {
+        background: none;
+        border: none;
+        color: hsl(224, 23%, 55%);
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/021/991/178/large_2x/colorful-music-notes-background-with-sheet-music-disc-and-treble-clef-illustration-ai-generative-free-photo.jpg"
+        alt="Music Illustration"
+        class="hero"
+      />
+
+      <div class="card-content">
+        <h2>Order Summary</h2>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="plan-box">
+          <div class="plan-left">
+            <img
+              src="https://cdn-icons-png.freepik.com/512/14691/14691642.png"
+              alt="Music Icon"
+            />
+            <div class="plan-details">
+              <h4>Annual Plan</h4>
+              <span>$59.99/year</span>
+            </div>
+          </div>
+          <a href="#" class="change-link">Change</a>
+        </div>
+
+        <button class="payment-btn">Proceed to Payment</button>
+        <button class="cancel-btn">Cancel Order</button>
+      </div>
+    </div>
+  </body>
+</html>

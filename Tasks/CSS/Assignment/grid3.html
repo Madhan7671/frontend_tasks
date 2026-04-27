@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid3.css">
+</head>
+<body>
+    <div class="dashboard">
+    <header>
+        <div class="logo"> Weather Now</div>
+        <button class="units-btn">Units ▾</button>
+    </header>
+
+    <h1>How's the sky looking today?</h1>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search for a place...">
+        <button class="search-btn">Search</button>
+    </div>
+
+    <main class="grid-layout">
+        <section class="left-col">
+            <div class="hero-card">
+                <div class="location">
+                    <h2>Berlin, Germany</h2>
+                    <p>Tuesday, Aug 5, 2025</p>
+                </div>
+                <div class="main-temp">
+                    <span class="sun-icon">☀️</span>
+                    <span class="temp-val">20°</span>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card"><span>Feels Like</span><strong>18°</strong></div>
+                <div class="detail-card"><span>Humidity</span><strong>46%</strong></div>
+                <div class="detail-card"><span>Wind</span><strong>14 km/h</strong></div>
+                <div class="detail-card"><span>Precipitation</span><strong>0 mm</strong></div>
+            </div>
+
+            <div class="daily-forecast">
+                <h3>Daily forecast</h3>
+                <div class="days-flex">
+                    <div class="day">Tue  <span>20°/14°</span></div>
+                    <div class="day">Wed  <span>21°/15°</span></div>
+                    <div class="day">Thu  <span>24°/14°</span></div>
+                    <div class="day">Fri  <span>25°/13°</span></div>
+                    <div class="day">Sat  <span>21°/15°</span></div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="hourly-sidebar">
+            <div class="sidebar-header">
+                <h3>Hourly forecast</h3>
+                <select><option>Tuesday</option></select>
+            </div>
+            <div class="hour-list">
+                <div class="hour-item"><span>3 PM</span>  <span>20°</span></div>
+                <div class="hour-item"><span>4 PM</span>  <span>20°</span></div>
+                <div class="hour-item"><span>5 PM</span>  <span>20°</span></div>
+                <div class="hour-item"><span>6 PM</span>  <span>19°</span></div>
+                <div class="hour-item"><span>7 PM</span>  <span>18°</span></div>
+            </div>
+        </aside>
+    </main>
+</div>
+</body>
+</html>

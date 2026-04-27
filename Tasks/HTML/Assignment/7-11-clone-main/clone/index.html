@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="7-Eleven is your go-to convenience store for food, snacks, hot and cold beverages, gas and so much more. Generally open 24 hours a day.">
+  <title>Your Convenience Store for Food, Drinks, & Fuel | 7-Eleven</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#" class="logo" id="logo">
+        <svg class="logo-icon" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect width="80" height="80" fill="none"/>
+          <polygon points="10,5 70,5 55,75 25,75" fill="#006241"/>
+          <polygon points="12,5 40,5 33,75 25,75" fill="#f26522"/>
+          <polygon points="40,5 70,5 55,75 33,75" fill="#e31837"/>
+          <text x="22" y="52" font-size="32" font-weight="900" fill="white" font-family="Arial">7</text>
+          <text x="15" y="70" font-size="9" font-weight="800" fill="white" font-family="Arial" letter-spacing="1">ELEVEN</text>
+        </svg>
+      </a>
+
+      <!-- Main Nav -->
+      <ul class="nav-main" id="nav-main">
+        <li>
+          <a href="#">Food</a>
+          <ul class="dropdown">
+            <li><a href="#">Bakery</a></li>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Candy</a></li>
+            <li><a href="#">Fresh & Chilled</a></li>
+            <li><a href="#">Hot Foods</a></li>
+            <li><a href="#">Ice Cream</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Roller Grill</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Drinks</a>
+          <ul class="dropdown">
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Energy Drinks</a></li>
+            <li><a href="#">Bottled Tea</a></li>
+            <li><a href="#">Big Gulp&reg;</a></li>
+            <li><a href="#">Energy Shots</a></li>
+            <li><a href="#">Beer</a></li>
+            <li><a href="#">Slurpee&reg;</a></li>
+            <li><a href="#">Sports Drinks</a></li>
+            <li><a href="#">Wine</a></li>
+            <li><a href="#">Bottled Water</a></li>
+            <li><a href="#">Cold Pressed Juices</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">7REWARDS&reg;</a>
+          <ul class="dropdown">
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">7-Eleven Wallet</a></li>
+            <li><a href="#">Fuel Savings</a></li>
+            <li><a href="#">Mobile Checkout</a></li>
+            <li><a href="#">7-Eleven Gold Pass&trade;</a></li>
+            <li><a href="#">Community Discounts</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="bold-link">Order 7NOW&reg; Delivery</a>
+        </li>
+        <li>
+          <a href="#" class="bold-link">Shop 7Collection&reg;</a>
+        </li>
+      </ul>
+
+      <!-- Right Nav -->
+      <div class="nav-right" id="nav-right">
+        <a href="#" id="find-store-link">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+            </svg>
+          </span>
+          <span class="find-store-text">Find a Store</span>
+        </a>
+        <a href="#" id="account-link">
+          <span class="nav-icon account-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero-section">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>A Lil' Savory, A Lil' Sweet</h1>
+          <p>The Waffle Sandwich brings the best of both worlds. Make it yours for $4.</p>
+          <a href="#" class="btn-primary" id="hero-cta">Find a Store</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/waffle-sandwich.png" alt="Chicken & Waffle Sandwich - $4 with 7REWARDS">
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Cards (2 columns, not a slider) -->
+    <section class="promo-section" id="promo-section">
+      <div class="promo-section-inner">
+        <div class="promo-card" id="promo-gold-pass">
+          <div class="promo-card-image">
+            <img src="images/gold-pass.png" alt="7-Eleven Gold Pass promotion">
+          </div>
+          <p class="promo-card-text">Get $10 in 7-Eleven&reg; Cash** when you Sign Up for 7-Eleven&reg; Gold Pass&trade;</p>
+          <a href="#" class="btn-outline-dark">Sign Up Now</a>
+        </div>
+        <div class="promo-card" id="promo-rewards">
+          <div class="promo-card-image">
+            <img src="images/rewards.png" alt="7Rewards app promotion">
+          </div>
+          <p class="promo-card-text">Get the 7-Eleven app and reap the rewards.</p>
+          <a href="#" class="btn-outline-dark">Get the App</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dew Promo Section -->
+    <section class="dew-promo" id="dew-promo">
+      <img src="images/dew-bronco.png" alt="Mountain Dew Bronco promotion">
+      <div class="dew-promo-overlay">
+        <h2>Buy Dew&reg; (20oz) with 7REWARDS&reg; to enter for a chance to win a Bronco&reg;***</h2>
+        <a href="#" class="btn-outline" id="dew-learn-more">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Inside 7-Eleven Blog -->
+    <section class="blog-section" id="blog-section">
+      <div class="blog-section-inner">
+        <h2 class="section-title">Inside 7-Eleven</h2>
+        <a href="#" class="view-all-link">View All</a>
+        <div class="blog-grid" id="blog-grid">
+          <article class="blog-card" id="blog-espresso">
+            <div class="blog-card-image">
+              <img src="images/espresso.png" alt="What Is Espresso?">
+            </div>
+            <h3>What Is Espresso?</h3>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          <article class="blog-card" id="blog-coffee-beans">
+            <div class="blog-card-image">
+              <img src="images/coffee-beans.png" alt="Types of Coffee Beans and Roasts">
+            </div>
+            <h3>Taste The Difference: The Different Types of Coffee Beans and Roasts</h3>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          <article class="blog-card" id="blog-latte">
+            <div class="blog-card-image">
+              <img src="images/latte.png" alt="What is A Latte?">
+            </div>
+            <h3>What is A Latte? Enjoy One Today!</h3>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          <article class="blog-card" id="blog-pumpkin">
+            <div class="blog-card-image">
+              <img src="images/pumpkin.png" alt="The Pumpkin Somethin">
+            </div>
+            <h3>The Pumpkin Somethin'</h3>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7Collection Section -->
+    <section class="collection-section" id="collection-section">
+      <div class="collection-left">
+        <img src="images/collection.png" alt="7Collection merchandise">
+        <div class="collection-overlay">
+          <a href="#" class="btn-collection" id="shop-now-btn">Shop Now</a>
+        </div>
+      </div>
+      <div class="collection-right">
+        <img src="images/collection-2.png" alt="7Collection fashion">
+      </div>
+    </section>
+
+    <!-- Social Bar -->
+    <div class="social-bar" id="social-bar">
+      <div class="social-bar-inner">
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>
+          <span>Twitter</span>
+        </a>
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="white"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="white"/></svg>
+          <span>Youtube</span>
+        </a>
+        <a href="#" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.41a8.16 8.16 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.14z" fill="white"/></svg>
+          <span>Tiktok</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hiring Banner -->
+    <div class="hiring-banner" id="hiring-banner">
+      <strong>We're Hiring!</strong> Employees can save 15&cent;/gal. <a href="#">Apply Now</a>
+    </div>
+
+    <!-- Disclaimers -->
+    <div class="disclaimers" id="disclaimers">
+      <p>*Valid thru 04/28/2026. Consumer pays applicable sales tax. Available while supplies last. Offer good at participating 7-Eleven/Speedway stores.</p>
+      <p>**Valid thru 4/24/26. New users only. Subscription required and auto renews unless cancelled. 7-Eleven Cash deposited in your account after the trial period and upon completion of the first month's subscription cycle. Additional limitations apply. Refer to full terms in the app. &copy;2026 7-Eleven, Inc. All rights reserved.</p>
+    </div>
+
+    <!-- Store Locator Bar -->
+    <div class="store-locator-bar" id="store-locator-bar">
+      <div class="store-locator-inner">
+        <svg class="store-loc-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" fill="white"/></svg>
+        <span class="store-loc-text">Store Locator</span>
+        <span class="store-loc-arrow">&rarr;</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Get To Know Us</h4>
+          <ul>
+            <li><a href="#">About 7-Eleven</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Newsroom</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Franchise Info</h4>
+          <ul>
+            <li><a href="#">Our Business Model</a></li>
+            <li><a href="#">Franchise Process</a></li>
+            <li><a href="#">Franchising for Veterans</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>How Can We Help?</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">New Vendor Information</a></li>
+            <li><a href="#">Vendor Guidelines</a></li>
+            <li><a href="#">Financial Services</a></li>
+            <li><a href="#">Business Fuel Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Download</h4>
+          <ul>
+            <li><a href="#">7-Eleven App</a></li>
+            <li><a href="#">7Now Delivery App</a></li>
+            <li><a href="#">7Charge App</a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-logo-col">
+          <svg class="footer-logo" viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="10,5 70,5 55,75 25,75" fill="white"/>
+            <text x="22" y="52" font-size="32" font-weight="900" fill="#1a1a1a" font-family="Arial">7</text>
+            <text x="10" y="72" font-size="10" font-weight="800" fill="#1a1a1a" font-family="Arial" letter-spacing="1">ELEVEN</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Let's Socialize -->
+      <div class="footer-social">
+        <h4>LET'S SOCIALIZE</h4>
+        <div class="footer-social-icons">
+          <a href="#" class="social-icon-small">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="white"/></svg>
+          </a>
+          <a href="#" class="social-icon-small">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/></svg>
+          </a>
+          <a href="#" class="social-icon-small">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>
+          </a>
+          <a href="#" class="social-icon-small">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" id="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">FAQs</a>
+          <a href="#">California Privacy</a>
+          <a href="#">Your Privacy Choices</a>
+          <a href="#">CA Transparency in Supply Chains Act</a>
+          <a href="#">CA Cleaning Products Right to Know</a>
+          <a href="#">Do Not Sell or Share My Information</a>
+          <a href="#">Site Accessibility Statement</a>
+        </div>
+        <p class="footer-copyright">
+          &copy;2026 7-ELEVEN, Inc. All rights reserved. 7-ELEVEN, 7NOW, 7Rewards, Brainfreeze, Big Bite, Big Gulp, Slurpee and the Tri-Stripe Design are registered trademarks of 7-ELEVEN.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-text">
+      We use cookies and similar technologies to improve your experience. Some of these cookies are needed for our site to function properly, while others help us tailor the site to you. 
+      <a href="#">Consent Management Tool</a>
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-outline" id="cookie-necessary">Accept Only Necessary Cookies</button>
+      <button class="cookie-btn cookie-btn-fill" id="cookie-accept">Accept</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
